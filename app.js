@@ -25,3 +25,58 @@ if (questionThree === 'Y') {
   alert('That\'s totaly correct!');
 } else {
 }
+
+var questionFour = prompt('What is Brian\'s favorit pet?').toUpperCase();
+var pets = ['dog', 'cat', 'fish', 'monkey'];
+if (pets.indexOf(questionFour) >= 0) {
+  alert('Congrats! You got it right.');
+} else {
+  alert(':( wrong.');
+}
+var questionFive = prompt('What is my favorite food?').toUpperCase();
+if (questionFive === 'pizza' || questionFive === 'carrots' || questionFive === 'burger' || questionFive === 'rice') {
+  alert('Congrats! You got it right.');
+} else {
+  alert('Wrong.');
+}
+
+var questionSix = prompt('Is Brian tall??').toUpperCase();
+if (questionSix === 'N') {
+  alert('Congrats! You got it right.');
+} else {
+  alert('Wrong.');
+}
+
+var questionSeven = parseInt(prompt('Guess my number between 1 and 50')); // => '30'
+var answer = 30;
+
+
+while (questionSeven !== answer) {
+  if (isNaN(questionSeven)) {
+    questionSeven = parseInt(prompt('Guess again, that was not a number'));
+  } else if (questionSeven > answer) {
+    questionSeven = parseInt(prompt('Guess again, that was too high'));
+  } else if (questionSeven < answer) {
+    questionSeven = parseInt(prompt('Guess again, that was too low'));
+  }
+}
+
+if (questionSeven === answer){
+  alert('That is the right answer! Yippie! ');
+}
+var cars = ['bmw', 'toyota', 'pinto', 'vw'];
+var questionEight = prompt('Guess one of my favorite cars').toUpperCase();
+var isTrue = false;
+
+for (var i = 0; i < cars.length; i++) {
+  if (questionEight === cars[i]) {
+    isTrue = true;
+    break;
+  }
+}
+
+if (isTrue) {
+  alert('Congrats that is a favorite');
+} else {
+  alert('That car is not one of my favorites');
+}
