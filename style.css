@@ -58,3 +58,39 @@ img{
 .languages li{
   display: inline-block;
 }
+.knowledge{
+  background-color: lightblue;
+  width: 200px;
+  border-radius:5px;
+  margin: 0 auto;
+}
+button{
+  width: 50px;
+  float: right;
+}
+
+h1{
+
+}
+#likes{
+  border-radius:5%;
+  margin: 0 auto;
+  background-color: lightgreen;
+  width: 200px;
+}
+
+#hideMe li{
+   list-style-type:none;
+   display:inline-block;
+}
+
+#hideMe li:hover{
+   opacity: 0.8;
+   text-decoration:underline;
+   background-color: #4B41B8;
+   width: auto;
+}
+
+#main-nav{
+   background-color: #685BFF;
+}
